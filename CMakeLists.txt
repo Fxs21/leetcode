@@ -24,6 +24,8 @@ set(MAIN_SOURCES
 
 set(SRC_SOURCES
     src/print_expr.c
+    001-two_sum/solution_enum.c
+    001-two_sum/solution_test.c
 )
 
 add_executable(
@@ -36,5 +38,7 @@ add_executable(
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/third_party/uthash/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/001-two_sum
 )
